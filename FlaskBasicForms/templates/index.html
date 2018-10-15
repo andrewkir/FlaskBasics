@@ -1,0 +1,16 @@
+<h1>Welcome</h1>
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }}{{form.name}}
+    <br>
+    {{form.food_choice.label}}{{form.food_choice}}
+    <br>
+    {{form.morethan.label}}{{form.morethan}}
+    <br>
+    {{form.mood.label}}{{form.mood}}
+    <br>
+    Any other feedback?
+    <br>
+    {{form.feedback}}
+    {{form.submit()}}
+</form>
