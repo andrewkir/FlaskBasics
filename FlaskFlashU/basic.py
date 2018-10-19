@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = 'somekey'
 
 
 class SimpleForm(FlaskForm):
-    name = StringField('What is your name', validators=[DataRequired()])
+    name = StringField('What is your name', validators=[DataRequired()], render_kw={"placeholder": "name"})
     submit = SubmitField('Click me')
 
 
@@ -18,7 +18,7 @@ def index():
     form = SimpleForm()
     if form.validate_on_submit():
         session['name'] = form.name.data
-        flash('YO, {} click button tho'.format(session['name']))
+        flash('Yo, {} click the button tho'.format(session['name']))
         return redirect(url_for('index'))
 
     return render_template('index.html', form=form)
