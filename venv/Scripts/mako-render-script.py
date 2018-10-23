@@ -1,4 +1,4 @@
-#!C:\Users\Андрей\Desktop\FlaskBasics\venv\Scripts\python.exe
+#!C:\Users\User\Desktop\FlaskBasics\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'Mako==1.0.7','console_scripts','mako-render'
 __requires__ = 'Mako==1.0.7'
 import re
